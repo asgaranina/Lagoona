@@ -1,0 +1,92 @@
+/** advantages **/
+
+.section-advantages {
+  padding: 35px 0px;
+}
+
+.section-advantages-item {
+  display: inline-block;
+  position: relative;
+  max-width: 275px;
+  max-height: 275px;
+  border-radius: 15px;
+  margin-bottom: 25px;
+  margin-right: 19px;
+  padding: 40px;
+
+  background-color: var(--white-color);
+
+  transition: transform 0.2s ease-in;
+}
+
+.section-advantages-item:hover {
+  transform: scale(1.1);
+}
+
+.section-advantages-item:nth-child(4n) {
+  margin-right: 0;
+}
+
+.bath-icon {
+  background-image: url('../img/advantages/bathtub.svg');
+  background-repeat: no-repeat;
+  background-size: 25%;
+  background-position: 40px 40px;
+}
+
+.hanger-icon {
+  background-image: url('../img/advantages/hanger.svg');
+  background-repeat: no-repeat;
+  background-size: 25%;
+  background-position: 40px 40px;
+}
+
+.heating-icon {
+  background-image: url('../img/advantages/heating.svg');
+  background-repeat: no-repeat;
+  background-size: 25%;
+  background-position: 40px 40px;
+}
+
+.hotel-key-icon {
+  background-image: url('../img/advantages/hotel-key.svg');
+  background-repeat: no-repeat;
+  background-size: 25%;
+  background-position: 40px 40px;
+}
+
+.parking-icon {
+  background-image: url('../img/advantages/parking.svg');
+  background-repeat: no-repeat;
+  background-size: 25%;
+  background-position: 40px 40px;
+}
+
+.reception-icon {
+  background-image: url('../img/advantages/reception.svg');
+  background-repeat: no-repeat;
+  background-size: 25%;
+  background-position: 40px 40px;
+}
+
+.security-box-icon {
+  background-image: url('../img/advantages/security-box.svg');
+  background-repeat: no-repeat;
+  background-size: 25%;
+  background-position: 40px 40px;
+}
+
+.swimming-pool-icon {
+  background-image: url('../img/advantages/swimming-pool.svg');
+  background-repeat: no-repeat;
+  background-size: 25%;
+  background-position: 40px 40px;
+}
+
+.section-advantages-description {
+  margin-top: 80px;
+
+  line-height: 30px;
+  font-size: 16px;
+  color: var(--dark-grey-color);
+}

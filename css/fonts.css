@@ -1,0 +1,61 @@
+/* для легкого начертания: */
+@font-face {
+  /* жирность/толщина шрифта */
+  font-weight: 300;
+  /* начертание шрифта - обычный, курсив, наклонный */
+  font-style: normal;
+  /* название семейста шрифта. оно будет одинаковое для всех вариантов начертаний и жирности */
+  font-family: 'Muller';
+  /* этим свойством задается поведение текста до того, как шрифт загружается у пользователя
+  auto - определяется юзер-агентом (поведение браузера по умолчанию)
+  block - пока идет ожидание шрифта в течение нескольких секунд текст занимает место, но отображается прозрачным,
+  потом отображается подменным шрифтом, если нужный не успел загрузиться
+  swap - текст сразу отображается подменным шрифтом, меняется на нужный, когда/если подгрузится
+  fallback - сначала очень маленькое количество времени идет блокировка и текст отображается прозрачным, потом рендерится с подменным шрифтом
+  на пару секунд, потом наступает период отказа - если наш шрифт не успел загрузиться, то весь сеанс будет с подменным
+  optional - практически то же самое, что и fallback, но в этом режиме система будет смотреть на скорость соединения и браузер
+  может прервать/приостановить загрузку шрифта, если она медленная.  */
+  font-display: swap;
+  src:
+  /* имя конкретного шрифта */
+    local('MullerLight'),
+    /* адрес и формат шрифта */
+    url('../fonts/MullerLight.woff2') format('woff2'),
+    url('../fonts/MullerLight.woff') format('woff');
+}
+
+/* для нормальной жирности: */
+@font-face {
+  font-weight: 400;
+  font-style: normal;
+  font-family: 'Muller';
+  font-display: swap;
+  src:
+    local('Muller'),
+    url('../fonts/MullerRegular.woff2') format('woff2'),
+    url('../fonts/MullerRegular.woff') format('woff');
+}
+
+/* для средней жирности: */
+@font-face {
+  font-weight: 500;
+  font-style: normal;
+  font-family: 'Muller';
+  font-display: swap;
+  src:
+    local('MullerRegular'),
+    url('../fonts/MullerMedium.woff2') format('woff2'),
+    url('../fonts/MullerMedium.woff') format('woff');
+}
+
+/* для жирного начертания: */
+@font-face {
+  font-weight: 600;
+  font-style: normal;
+  font-family: 'Muller';
+  font-display: swap;
+  src:
+    local('MullerBold'),
+    url('../fonts/MullerBold.woff2') format('woff2'),
+    url('../fonts/MullerBold.woff') format('woff');
+}

@@ -1,0 +1,13 @@
+/** About us **/
+.section-about {
+  padding: 35px 0px;
+}
+
+.section-about-us-text {
+  margin-left: 45px;
+  max-width: 900px;
+
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--middle-grey-color);
+}

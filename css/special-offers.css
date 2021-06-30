@@ -1,0 +1,71 @@
+/** спецпредложения **/
+
+.section-special-lux-info {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  max-height: 565px;
+  min-width: 595px;
+  padding: 50px;
+  padding-top: 285px;
+  border-radius: 15px;
+
+  background-image: url('../img/spec.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  transition: transform 0.2s ease-in;
+}
+
+.section-special-lux-info:hover {
+  transform: scale(1.05);
+}
+
+.section-special-heading {
+  margin-bottom: 40px;
+
+  color: var(--white-color);
+  font-size: 66px;
+  font-weight: 600;
+  line-height: 60px;
+}
+
+.section-special-bottom {
+  display: flex;
+  align-items: center;
+}
+
+.section-special-lux-price {
+  margin-right: 45px;
+
+  color: var(--white-color);
+  font-size: 35px;
+  font-weight: normal;
+
+  opacity: 0.5;
+}
+
+.section-special-link {
+  padding-right: 15px;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1;
+}
+
+.section-special-link::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.section-special-icon {
+  position: absolute;
+  background-repeat: no-repeat;
+  background-image: url('../img/link_arrow.svg');
+  height: 20px;
+  width: 20px;
+  transform: translateX(5px) translateY(-2px);
+}

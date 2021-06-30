@@ -1,0 +1,125 @@
+/** placement **/
+
+.section-placement {
+  padding: 35px 0px;
+}
+
+.section-placement-item {
+  display: inline-block;
+  background-color: var(--white-color);
+  border-radius: 15px;
+  margin-bottom: 25px;
+  margin-right: 26px;
+  max-width: 370px;
+  transition: transform 0.2s ease-in;
+}
+
+.section-placement-item:hover {
+  transform: scale(1.1);
+}
+
+.section-placement-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.section-placement-img {
+  border-radius: 15px 15px 0 0;
+}
+
+.section-placement-info {
+  padding: 25px 40px 35px;
+}
+
+.hotel-name {
+  margin-bottom: 15px;
+  line-height: 30px;
+}
+
+.hotel-price-and-rate {
+  display: flex;
+  align-items: baseline;
+}
+
+.hotel-price {
+  margin-right: 35px;
+}
+
+.section-placement-strong {
+  font-size: 25px;
+}
+
+.section-placement-star {
+  width: 14px;
+  height: 13px;
+}
+
+.hotel-name {
+  margin-bottom: 15px;
+}
+
+.section-placement-regular {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.section-placement-grey {
+  font-size: 16px;
+  color: var(--light-grey-color);
+}
+
+.section-placement-rooms-btn {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: transparent;
+  border: var(--orange-color) solid 2px;
+  border-radius: 10px;
+  color: var(--orange-color);
+}
+
+.look-all-options {
+  position: relative;
+  width: 370px;
+  height: 425px;
+
+  background-image: url('../img/placement/41.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.readmore-flex-container {
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: nowrap;
+  justify-content: start;
+  min-height: 375px;
+  height: 100%;
+}
+
+.section-placement-readmore {
+  display: block;
+  padding-right: 15px;
+  margin-left: 40px;
+  margin-bottom: 50px;
+  margin-right: 10px;
+
+  color: var(--white-color);
+  font-size: 20px;
+}
+
+.section-placement-readmore::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.section-placement-readmore-icon {
+  position: absolute;
+  background-repeat: no-repeat;
+  background-image: url('../img/link_arrow_white.svg');
+  height: 25px;
+  width: 25px;
+  transform: translateX(5px) translateY(1px);
+}

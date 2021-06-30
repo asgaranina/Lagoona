@@ -1,0 +1,143 @@
+/* глобальные переменные с повторяющимися цветами */
+:root {
+  --orange-color: #CC9933;
+  --dark-grey-color: #333333;
+  --middle-grey-color: #666666;
+  --grey-color: #999999;
+  --light-grey-color: #BEBEBE;
+  --white-color: #ffffff;
+  --special-white-color: #F1F1F1;
+}
+
+/* для всего документа указывается применение алгоритма, при котором свойства width и height задают размеры блока, а не контента. Нужно, чтобы проще было располагать элементы */
+html {
+  box-sizing: border-box;
+}
+
+/* Тут, если я правильно поняла то, что прочитала, уточняется, что псевдоэлементы тоже должны наследовать свойство box-sizing от родителя */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  /* минимальная ширина body и нулевой margin чтобы бесконечно не сжималось содержимое body */
+  min-width: 320px;
+  margin: 0;
+  /* настройки фонового цвета сайта и шрифта по-умолчанию */
+  background-color: var(--special-white-color);
+  /* основной цвет сайта тот, который загрузили и альтернативы*/
+  font-family: 'Muller', Arial, Helvetica, sans-serif;
+
+  font-size: 16px;
+  font-style: normal;
+  color: black;
+  line-height: 1;
+}
+/* кнопки и инпуты будут наследовать настройки шрифта от родительских элементов */
+button, input {
+  font: inherit;
+}
+/* специальный курсор для кнопок, чтобы было понятно, что кликабельно */
+button {
+  cursor: pointer;
+  transition: transform 0.15s ease-in-out, opacity 0.15s ease-in-out;
+}
+
+/* ховер-эффект для всех кнопок */
+button:hover,
+button:focus {
+  transform: scale(1.1);
+}
+
+button:active {
+  transform: scale(0.9);
+  opacity: 0.8;
+}
+
+/* картинки не могут расти больше своего размера */
+img {
+  max-width: 100%;
+  height: auto;
+}
+/* убирается подчеркивание у ссылок и указывается, что по умолчанию цвет наследуется от родителя */
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: opacity 0.2s ease-in, color 0.2s ease-in;
+}
+
+/* ховер-эффект для всех ссылок */
+a:hover,
+a:focus {
+  opacity: 50%;
+}
+
+a:focus,
+input:focus,
+button:focus,
+textarea:focus {
+  outline: none;
+}
+
+a:active {
+  opacity: 100%;
+}
+
+/* ховер-эффект для всех инпутов и текстовых полей */
+input,
+textarea {
+  transition: transform 0.2s ease-in, ;
+}
+
+input:hover,
+textarea:hover,
+input:focus,
+textarea:focus {
+  transform: scale(1.05);
+}
+
+
+/* убираются стандартные стили у списка */
+ul {
+  list-style: none;
+}
+/* обнуляются внешние и внутренние отступы заголовков, параграфов и списков */
+h1, h2, h3, p, ul {
+  padding: 0;
+  margin: 0;
+}
+
+/* container */
+/* размер контейнера, обнуление верхних и нижних отступов, автоматические отступы справа и слева для центровки*/
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+/* обрезка элемента до минимальных размеров, плюс !important, чтобы случайно не получилось где-то что-то переназначить и показать его, если я правильно поняла */
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+/* все ссылки с классом orange должны быть указанного цвета */
+a.orange {
+  color: var(--orange-color);
+}
+/* общие отступы для заголовков секций */
+.section-heading {
+  margin-left: 45px;
+  margin-bottom: 20px;
+
+  font-size: 40px;
+  color: var(--dark-grey-color);
+  font-weight: normal;
+}
+
